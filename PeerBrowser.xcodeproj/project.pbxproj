@@ -22,6 +22,9 @@
 		3DA6E03A17D0DCAB00309165 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA6E01917D0DCAB00309165 /* UIKit.framework */; };
 		3DA6E04217D0DCAB00309165 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DA6E04017D0DCAB00309165 /* InfoPlist.strings */; };
 		3DA6E04417D0DCAB00309165 /* PeerBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6E04317D0DCAB00309165 /* PeerBrowserTests.m */; };
+		3DA6E04E17D0DCB500309165 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA6E04D17D0DCB500309165 /* MultipeerConnectivity.framework */; };
+		3DA6E05917D0E4B500309165 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6E05617D0E4B500309165 /* fishhook.c */; };
+		3DA6E05A17D0E4B500309165 /* QuietAssertMacros.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6E05817D0E4B500309165 /* QuietAssertMacros.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,10 @@
 		3DA6E03F17D0DCAB00309165 /* PeerBrowserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PeerBrowserTests-Info.plist"; sourceTree = "<group>"; };
 		3DA6E04117D0DCAB00309165 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3DA6E04317D0DCAB00309165 /* PeerBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeerBrowserTests.m; sourceTree = "<group>"; };
+		3DA6E04D17D0DCB500309165 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		3DA6E05617D0E4B500309165 /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		3DA6E05717D0E4B500309165 /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		3DA6E05817D0E4B500309165 /* QuietAssertMacros.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QuietAssertMacros.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA6E04E17D0DCB500309165 /* MultipeerConnectivity.framework in Frameworks */,
 				3DA6E01817D0DCAB00309165 /* CoreGraphics.framework in Frameworks */,
 				3DA6E01A17D0DCAB00309165 /* UIKit.framework in Frameworks */,
 				3DA6E01617D0DCAB00309165 /* Foundation.framework in Frameworks */,
@@ -103,6 +111,7 @@
 		3DA6E01417D0DCAB00309165 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3DA6E04D17D0DCB500309165 /* MultipeerConnectivity.framework */,
 				3DA6E01517D0DCAB00309165 /* Foundation.framework */,
 				3DA6E01717D0DCAB00309165 /* CoreGraphics.framework */,
 				3DA6E01917D0DCAB00309165 /* UIKit.framework */,
@@ -129,6 +138,9 @@
 		3DA6E01C17D0DCAB00309165 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3DA6E05617D0E4B500309165 /* fishhook.c */,
+				3DA6E05717D0E4B500309165 /* fishhook.h */,
+				3DA6E05817D0E4B500309165 /* QuietAssertMacros.c */,
 				3DA6E01D17D0DCAB00309165 /* PeerBrowser-Info.plist */,
 				3DA6E01E17D0DCAB00309165 /* InfoPlist.strings */,
 				3DA6E02117D0DCAB00309165 /* main.m */,
@@ -255,6 +267,8 @@
 			files = (
 				3DA6E02F17D0DCAB00309165 /* ViewController.m in Sources */,
 				3DA6E02617D0DCAB00309165 /* AppDelegate.m in Sources */,
+				3DA6E05A17D0E4B500309165 /* QuietAssertMacros.c in Sources */,
+				3DA6E05917D0E4B500309165 /* fishhook.c in Sources */,
 				3DA6E02217D0DCAB00309165 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
